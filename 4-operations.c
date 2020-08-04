@@ -10,10 +10,16 @@ int prod(int a,int b){
        scanf("%d %d",&a,&b);
     return a*b;
 }
-int divis(int a,int b){
+int divis(int a,int b)
+{
        printf("donner deux nombres :");
        scanf("%d %d",&a,&b);
-    return a/b;
+       if (b == 0)
+       {
+           printf("Error: denominator souldn't be a zero")
+           exit(0); // to exit the program
+       }
+       return a/b;
 }
 int sous(int a,int b){
        printf("donner deux nombres :");
