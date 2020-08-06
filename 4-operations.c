@@ -31,9 +31,10 @@ int main()
     int a;
     int b;
     int op;
-    printf("quelle operation voulez-vous ?\n1 : somme \t2 : produit\n3 : division \t4 : soustraction \n");
+    printf("Quelle operation voulez-vous ?\n1 : somme \n2 : produit\n3 : division \n4 : soustraction \n");
     scanf("%d",&op);
-    switch(op){
+    switch(op)
+    {
         case 1 : printf("la somme est : %d",somme(a,b));
         break;
         case 2 : printf("le produit est : %d",prod(a,b));
@@ -42,6 +43,8 @@ int main()
         break;
         case 4 : printf("la soustraction est : %d",sous(a,b));
         break;
+       default:
+                 printf("Error! operator is not correct");
     }
     return 0;
 }
