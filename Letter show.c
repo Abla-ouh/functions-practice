@@ -16,7 +16,7 @@ int show(char string[],char letter){
 
 int main()
 {
-    char string;
+    char string[50] ;
     char letter;
     printf("this letter shows %d times !! ",show(string,letter));
     return 0;
