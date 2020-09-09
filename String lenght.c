@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-int i;
-char string[50];
+
+char str[50];
 int string_lenght(char string[]);
 
 int main()
 {
-    printf("Length of the string is : %d\n\n",string_lenght(string));
-
+    printf("enter a string : \t");
+    scanf("%s",str);
+    printf("Length of the string is : %d\n\n",string_lenght(str));
     return 0;
 }
 
-int string_lenght(char string[]){
-                printf("enter a string : \t");
-                fgets(string, sizeof string, stdin);
-                i=0;
-                while(string[i]!= '\0'){ i++; }
-  return i+1;
+int string_lenght(char *s)
+{
+    int i = 0;
+    while(s[i])
+        i++;
+    return (i);
 }
